@@ -12,7 +12,6 @@
     <a href="#🚀-tổng-quan">Tổng quan</a> •
     <a href="#🛠️-hướng-dẫn-cài-đặt-và-sử-dụng">Hướng dẫn cài đặt và sử dụng</a> •
     <a href="#⚙️-cấu-hình-blynk">Cấu hình Blynk</a> •
-    <a href="#💡-tính-năng-chính">Tính năng chính</a> •
     <a href="#🚩-sản-phẩm-thực-tế">Sản phẩm thực tế</a>
   </p>
 
