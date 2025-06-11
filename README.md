@@ -10,10 +10,10 @@
 
   <p>
     <a href="#🚀-tổng-quan">Tổng quan</a> •
-    <a href="#📁-cấu-trúc-dự-án">Cấu trúc dự án</a> •
     <a href="#🛠️-hướng-dẫn-cài-đặt-và-sử-dụng">Hướng dẫn cài đặt và sử dụng</a> •
     <a href="#⚙️-cấu-hình-blynk">Cấu hình Blynk</a> •
-    <a href="#💡-tính-năng-chính">Tính năng chính</a>
+    <a href="#💡-tính-năng-chính">Tính năng chính</a> •
+    <a href="#🚩-sản-phẩm-thực-tế">Sản phẩm thực tế</a>
   </p>
 
   ---
@@ -27,11 +27,6 @@ Chào mừng bạn đến với kho lưu trữ **`ESP32_Smart_door`**!
 
 Dự án này cung cấp một giải pháp hoàn chỉnh cho việc xây dựng một hệ thống cửa thông minh, cho phép bạn điều khiển đóng/mở và giám sát trạng thái của cửa từ bất cứ đâu thông qua ứng dụng di động Blynk. Sử dụng vi điều khiển ESP32 mạnh mẽ, dự án này là sự kết hợp giữa phần cứng và phần mềm để mang lại sự tiện lợi và an toàn cho ngôi nhà của bạn.
 
-<br>
-
-## 📁 Cấu trúc Dự án
-
-Kho lưu trữ được tổ chức một cách rõ ràng để bạn dễ dàng tìm kiếm và phát triển. Cấu trúc này tuân theo tiêu chuẩn của PlatformIO
 <br>
 
 ## 🛠️ Hướng dẫn cài đặt và sử dụng
@@ -88,7 +83,7 @@ char ssid[] = "YOUR_WIFI_SSID";     // Tên mạng Wifi của bạn
 char pass[] = "YOUR_WIFI_PASSWORD"; // Mật khẩu Wifi của bạn
 ```
 
-### 3. Thiết lập Datastreams và Widgets trên ứng dụng Blynk
+### 3. Thiết lập Datastreams trên ứng dụng Blynk
 * Thiết lập công tắc ảo Control Pass để điều khiển việc cho phép và không cho phép nhập mật khẩu.
 * Thiết lập công tắc ảo Control Door để đóng mở cửa từ xa.
 * Bạn cần tạo các Datastreams tương ứng trên ứng dụng Blynk để điều khiển và giám sát cửa
@@ -107,11 +102,20 @@ char pass[] = "YOUR_WIFI_PASSWORD"; // Mật khẩu Wifi của bạn
 ![Image](https://github.com/user-attachments/assets/4ab1b57e-5ace-4121-b9c9-64a33b7e6cba)
 <br>
 
-## 💡 Tính năng chính
-* Điều khiển từ xa: Đóng/mở cửa thông qua ứng dụng Blynk.
-* Giám sát trạng thái: Nhận thông báo về trạng thái đóng/mở của cửa.
-* Cảnh báo an ninh: Nhận cảnh báo khi có sự cố (ví dụ: cửa mở trái phép, nhập sai mật khẩu quá nhiều lần - nếu có tích hợp khóa số).
-* Kết nối Wifi: Sử dụng ESP32 để kết nối với mạng Wifi nhà bạn.
+## 🚩 Sản phẩm thực tế  
+
+* Hình ảnh sản phẩm  
+  
+![Image](https://github.com/user-attachments/assets/4d81e4d7-fea2-4c3e-aadd-f5422bfd31a5)  
+
+![Image](https://github.com/user-attachments/assets/b90fe5ab-9323-43b3-8db6-f412df51777b)  
+
+![Image](https://github.com/user-attachments/assets/1ec14359-2239-489c-9ed6-a1922a23d178)  
+
+* Video chạy thử sản phẩm  
+
+[![Image](https://github.com/user-attachments/assets/3ac83cd1-7f86-4c51-a952-ec393e816f73)](https://youtu.be/4SuPDmZ4MYU)
+
 <br>
 
 ---
