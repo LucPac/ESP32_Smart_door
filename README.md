@@ -105,7 +105,7 @@ char pass[] = "YOUR_WIFI_PASSWORD"; // Mật khẩu Wifi của bạn
 
 * PCB
 
-![image](https://github.com/user-attachments/assets/f3e333f3-f313-43cf-aa99-5caba99734ab)
+![image](https://github.com/user-attachments/assets/8b5fd353-5e9b-4ee1-b4e6-18378d0c0ba5)
 
 ![image](https://github.com/user-attachments/assets/e3680863-935d-402b-8ed2-0ffe2a3997a8)
 
