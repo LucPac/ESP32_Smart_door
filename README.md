@@ -95,8 +95,8 @@ char pass[] = "YOUR_WIFI_PASSWORD"; // Mật khẩu Wifi của bạn
 ### 4. Thiết lập Events & Notifications trên Blynk
 * Thiết lập để nhận thông báo khi cửa mở và khi nhập sai mật khẩu quá nhiều lần.
   
-**door_warning**: Nhận thông báo khi cửa mở.  
-**infor_log**: Nhận thông báo khi nhập sai mật khẩu quá nhiều lần.
+**door_warning**: Nhận thông báo khi nhập sai mật khẩu quá nhiều lần.  
+**infor_log**: Nhận thông báo khi cửa mở.
 
 ![Image](https://github.com/user-attachments/assets/4ab1b57e-5ace-4121-b9c9-64a33b7e6cba)
 <br>
