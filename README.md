@@ -1,18 +1,18 @@
 <div align="center">
-  <h1>🚪✨ Cửa thông minh dùng ESP32 và Blynk ✨🚪</h1>
+  <h1>🚪✨ Smart Door with ESP32 and Blynk ✨🚪</h1>
   <p>
-    <img src="https://img.shields.io/badge/Vi%20%C4%91i%E1%BB%83u%20khi%E1%BB%83n-ESP32-blueviolet?style=for-the-badge&logo=espressif&logoColor=white" alt="ESP32 Badge">
-    <img src="https://img.shields.io/badge/N%E1%BB%81n%20t%E1%BA%A3ng-Blynk-brightgreen?style=for-the-badge&logo=blynk&logoColor=white" alt="Blynk Badge">
-    <img src="https://img.shields.io/badge/Ng%C3%B4n%20ng%E1%BB%AF-C%2B%2B-blue?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++ Badge">
+    <img src="https://img.shields.io/badge/Microcontroller-ESP32-blueviolet?style=for-the-badge&logo=espressif&logoColor=white" alt="ESP32 Badge">
+    <img src="https://img.shields.io/badge/Platform-Blynk-brightgreen?style=for-the-badge&logo=blynk&logoColor=white" alt="Blynk Badge">
+    <img src="https://img.shields.io/badge/Language-C%2B%2B-blue?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++ Badge">
   </p>
 
   ---
 
   <p>
-    <a href="#🚀-tổng-quan">Tổng quan</a> •
-    <a href="#🛠️-hướng-dẫn-cài-đặt-và-sử-dụng">Hướng dẫn cài đặt và sử dụng</a> •
-    <a href="#⚙️-cấu-hình-blynk">Cấu hình Blynk</a> •
-    <a href="#🚩-sản-phẩm-thực-tế">Sản phẩm thực tế</a>
+    <a href="#🚀-overview">Overview</a> •
+    <a href="#🛠️-installation-and-usage-guide">Installation and Usage Guide</a> •
+    <a href="#⚙️-blynk-setup">Blynk Setup</a> •
+    <a href="#🚩-final-product">Final Product</a>
   </p>
 
   ---
@@ -20,88 +20,88 @@
 
 <br>
 
-## 🚀 Tổng quan
+## 🚀 Overview
 
-Chào mừng bạn đến với kho lưu trữ **`ESP32_Smart_door`**!
+Welcome to the **`ESP32_Smart_door`** repository!
 
-Dự án này cung cấp một giải pháp hoàn chỉnh cho việc xây dựng một hệ thống cửa thông minh, cho phép bạn điều khiển đóng/mở và giám sát trạng thái của cửa từ bất cứ đâu thông qua ứng dụng di động Blynk. Sử dụng vi điều khiển ESP32 mạnh mẽ, dự án này là sự kết hợp giữa phần cứng và phần mềm để mang lại sự tiện lợi và an toàn cho ngôi nhà của bạn.
+This project provides a complete solution for building a smart door system that allows you to control the opening/closing and monitor the door status from anywhere through the Blynk mobile app. Using the powerful ESP32 microcontroller, this project combines hardware and software to bring convenience and security to your home.
 
 <br>
 
-## 🛠️ Hướng dẫn cài đặt và sử dụng
+## 🛠️ Installation and Usage Guide
 
-Để triển khai dự án này, bạn cần có các phần mềm và thành phần phần cứng sau:
+To set up this project, you need the following software and hardware components:
 
-### Yêu cầu phần mềm:
+### Software Requirements:
 * VS Code
 * PlatformIO IDE Extension
-* Ứng dụng Blynk (Android/iOS)
+* Blynk App (Android/iOS)
 
-### Yêu cầu phần cứng:
+### Hardware Requirements:
 * ESP32
-* Servo SG90 (Mô phỏng cửa)
-* Ma trận phím 4x4
-* Breadboard, dây cắm hoặc vẽ PCB và hàn mạch
+* Servo SG90 (Door simulator)
+* 4x4 Keypad Matrix
+* Breadboard, jumper wires or design PCB and solder the circuit
 
-### Các bước cơ bản:
+### Basic Steps:
 
-* Cài đặt VS Code và PlatformIO IDE Extension
-* Clone hoặc tải về
+* Install VS Code and PlatformIO IDE Extension
+* Clone or download the repository
     ```bash
     git clone https://github.com/your-username/ESP32_Smart_door.git
     ```
-* Mở dự án trong VS Code với PlatformIO
-* Cấu hình thông tin Blynk và Wifi (xem phần dưới).
-* Biên dịch và Upload mã nguồn
-* Thiết lập ứng dụng Blynk
-* Kết nối phần cứng
+* Open the project in VS Code with PlatformIO
+* Configure Blynk and WiFi information (see below)
+* Compile and upload the code
+* Set up the Blynk app
+* Connect the hardware
 
    ![Image](https://github.com/user-attachments/assets/11b66dff-b35e-4c9a-ab23-a85c969d9280)
 <br>
 
-## ⚙️ Cấu hình Blynk
+## ⚙️ Blynk Setup
 
-Để dự án hoạt động, bạn cần cấu hình tài khoản và dự án Blynk của mình.
+To make the project work, you need to configure your Blynk account and project.
 
-### 1. Tạo dự án mới trên Blynk Console
-* Truy cập [Blynk Console](https://blynk.cloud/) và tạo một tài khoản (nếu chưa có).
-* Tạo một **New Template** cho dự án "Smart Door".
-* Ghi lại **Template ID** và **Template Name**.
-* Khi tạo thiết bị mới từ Template này, bạn sẽ nhận được một **Auth Token**.
+### 1. Create a new project on Blynk Console
+* Go to [Blynk Console](https://blynk.cloud/) and create an account (if you don't have one).
+* Create a **New Template** for the "Smart Door" project.
+* Write down the **Template ID** and **Template Name**.
+* When creating a new device from this Template, you will receive an **Auth Token**.
 
-### 2. Cập nhật thông tin vào mã nguồn
-Trong file `src/main.cpp`, bạn cần thay thế các placeholder sau bằng thông tin của mình:
-* Nhập thông tin trên Blynk của bạn vào khoảng trống.
-* Tiếp theo nhập tên và mật khẩu Wifi.
+### 2. Update the information in the source code
+In the `src/main.cpp` file, you need to replace the following placeholders with your information:
+* Enter your Blynk information in the blank spaces.
+* Next, enter your WiFi name and password.
 ```cpp
 #define BLYNK_TEMPLATE_ID "YOUR_BLYNK_TEMPLATE_ID"
-#define BLYNK_DEVICE_NAME "YOUR_BLYNK_TEMPLATE_NAME" // Tên thiết bị của bạn
+#define BLYNK_DEVICE_NAME "YOUR_BLYNK_TEMPLATE_NAME" // Your device name
 #define BLYNK_AUTH_TOKEN "YOUR_BLYNK_AUTH_TOKEN"
 
-char ssid[] = "YOUR_WIFI_SSID";     // Tên mạng Wifi của bạn
-char pass[] = "YOUR_WIFI_PASSWORD"; // Mật khẩu Wifi của bạn
+char ssid[] = "YOUR_WIFI_SSID";     // Your WiFi network name
+char pass[] = "YOUR_WIFI_PASSWORD"; // Your WiFi password
 ```
 
-### 3. Thiết lập Datastreams trên ứng dụng Blynk
-* Thiết lập công tắc ảo Control Pass để điều khiển việc cho phép và không cho phép nhập mật khẩu.
-* Thiết lập công tắc ảo Control Door để đóng mở cửa từ xa.
-* Bạn cần tạo các Datastreams tương ứng trên ứng dụng Blynk để điều khiển và giám sát cửa
+### 3. Set up Datastreams on Blynk app
+* Set up a virtual switch Control Pass to allow or deny password entry.
+* Set up a virtual switch Control Door to open/close the door remotely.
+* You need to create corresponding Datastreams on the Blynk app to control and monitor the door
 
-**Control Door**: Dùng cho điều khiển đóng/mở cửa.  
-**Control Pass**: Dùng để điều khiển việc cho phép và không cho phép nhập mật khẩu.
+**Control Door**: Used to control door opening/closing.  
+**Control Pass**: Used to allow or deny password entry.
 
 ![Image](https://github.com/user-attachments/assets/fcbd7521-018a-412e-ab2a-13345259e6de)
 
-### 4. Thiết lập Events & Notifications trên Blynk
-* Thiết lập để nhận thông báo khi cửa mở và khi nhập sai mật khẩu quá nhiều lần.
+### 4. Set up Events & Notifications on Blynk
+* Set up to receive notifications when the door opens and when the wrong password is entered too many times.
   
-**door_warning**: Nhận thông báo khi nhập sai mật khẩu quá nhiều lần.  
-**infor_log**: Nhận thông báo khi cửa mở.
+**door_warning**: Receive notification when wrong password is entered too many times.  
+**infor_log**: Receive notification when the door opens.
 
 ![Image](https://github.com/user-attachments/assets/4ab1b57e-5ace-4121-b9c9-64a33b7e6cba)
 <br>
 
-## 🚩 Sản phẩm thực tế  
+## 🚩 Final Product  
 
 * PCB
 
@@ -109,7 +109,7 @@ char pass[] = "YOUR_WIFI_PASSWORD"; // Mật khẩu Wifi của bạn
 
 ![image](https://github.com/user-attachments/assets/e3680863-935d-402b-8ed2-0ffe2a3997a8)
 
-* Hình ảnh sản phẩm  
+* Product Images  
   
 ![Image](https://github.com/user-attachments/assets/4d81e4d7-fea2-4c3e-aadd-f5422bfd31a5)  
 
@@ -117,7 +117,7 @@ char pass[] = "YOUR_WIFI_PASSWORD"; // Mật khẩu Wifi của bạn
 
 ![Image](https://github.com/user-attachments/assets/1ec14359-2239-489c-9ed6-a1922a23d178)  
 
-* Video chạy thử sản phẩm  
+* Product Demo Video  
 
 [![Image](https://github.com/user-attachments/assets/3ac83cd1-7f86-4c51-a952-ec393e816f73)](https://youtu.be/4SuPDmZ4MYU)
 
@@ -127,5 +127,5 @@ char pass[] = "YOUR_WIFI_PASSWORD"; // Mật khẩu Wifi của bạn
 
 <div align="center">
   <br>
-  <p>Cảm ơn bạn đã ghé thăm! Hy vọng repo này hữu ích cho việc học tập và nghiên cứu của bạn. 😊</p>
+  <p>Thank you for visiting! I hope this repository is useful for your learning and research. 😊</p>
   </div>
